@@ -27,7 +27,7 @@ export default {
       if(file.indexOf("http") === 0) return `${file}?cachebust=${randomNumber}`
       if(file.indexOf("data:image") === 0) return file
       
-      return require(`@/assets/${ file }`)
+      return require(`@/assets/img/${ file }`)
     }
   }
 }

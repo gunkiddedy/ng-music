@@ -8,8 +8,12 @@
       </p>
 
       <Card :contents="contents"/>
+
+      <div v-if="!contents.length" class="no-content text-xl text-gray-600 font-bold text-center">
+        Oops...! No data found for this search!
+      </div>
   
-      <div class="bottom-button mt-4">
+      <div v-if="contents.length" class="bottom-button mt-4">
         <button class="loadmore bg-[#e2e8f0] rounded-[17px] w-[120px] h-[34px] text-[#64748b] text-xs font-medium">
           Load More
         </button>
