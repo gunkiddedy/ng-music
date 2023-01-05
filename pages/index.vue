@@ -1,7 +1,7 @@
 <template>
   <div class="index">
     <div class="home bg-gradient-to-b from-[#712bda] to-[#a45deb] min-w-full min-h-screen flex flex-col justify-center items-center">
-      <Logo />
+      <Logo class="mb-8" />
       <div class="search absolute bottom-12 inset-x-0 flex flex-col items-center space-y-4">
         <input 
           class="text-xs font-medium text-center px-8 text-gray-500 rounded-[20px] w-[280px] h-10 focus:outline-none" 
