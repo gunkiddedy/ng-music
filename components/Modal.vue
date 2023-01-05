@@ -32,7 +32,6 @@
             <button 
               :class="param.length < 3 ? 'cursor-not-allowed' : 'cursor-pointer'"
               class="rounded-[20px] text-white text-sm font-medium w-[280px] h-10 bg-gradient-to-b from-[#712bda] to-[#a45deb]"
-              :disabled="param.length < 3"
               type="submit"
               @click="handleSearch">
               Search
