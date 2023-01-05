@@ -4,8 +4,14 @@
       v-for="(content, idx) in contents" 
       :key="idx"
       class="card-music bg-white rounded-[10px] flex p-2 shadow-md min-w-[310px]">
-      <div class="left-img">
+      <div class="left-img flex items-center justify-center relative">
         <img class="w-[100px] h-[100px] rounded-[10px]" :src="content.artworkUrl100" alt="">
+        <a :href="content.trackViewUrl" target="_blank" class="absolute mx-auto">
+          <BaseImage 
+            file-name="play-circle.svg"
+            alt="play-circle" 
+          />
+        </a>
       </div>
       <div class="right flex flex-col justify-between pl-2 w-3/4">
         <div class="top">
