@@ -12,10 +12,10 @@
           placeholder="Artist / Album / Title">
 
         <button 
-        :class="!param ? 'cursor-not-allowed' : 'cursor-pointer'"
+        :class="param.length < 3 ? 'cursor-not-allowed' : 'cursor-pointer'"
           class="rounded-[20px] bg-[#ffffff33] text-white text-sm font-medium w-[280px] h-10"
           @click="handleSearch"
-          :disabled="!param">
+          :disabled="param.length < 3">
           Search
         </button>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="pb-2">
     <Navbar />
     <div class="result min-w-full min-h-screen bg-[#f8fafc] flex flex-col items-center">
   

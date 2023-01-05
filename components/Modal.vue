@@ -30,9 +30,9 @@
               placeholder="Artist / Album / Title">
 
             <button 
-              :class="!param ? 'bg-gray-200 cursor-not-allowed' : 'bg-gradient-to-b from-[#712bda] to-[#a45deb] cursor-pointer'"
+              :class="param.length < 3 ? 'bg-gray-200 cursor-not-allowed' : 'bg-gradient-to-b from-[#712bda] to-[#a45deb] cursor-pointer'"
               class="rounded-[20px] text-white text-sm font-medium w-[280px] h-10"
-              :disabled="!param"
+              :disabled="param.length < 3"
               type="submit"
               @click="handleSearch">
               Search
