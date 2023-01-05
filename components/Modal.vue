@@ -9,10 +9,12 @@
       <div class="h-full w-full bg-[#1c1c2de6] opacity-95 flex items-center justify-center" :class="!showModal ? 'hidden' : ''" />
       <div class="modal-container w-full fixed h-full min-h-screen left-0 top-0 flex items-center justify-center z-40 px-3">
         <button
-            class="absolute right-3 md:right-10 top-6"
-            @click="closeModal"
-          >
-          <img :src="require('../assets/close.svg')" alt="logo">
+          class="absolute right-3 md:right-10 top-6"
+          @click="closeModal">
+          <BaseImage
+            file-name="close.svg"
+            alt="close"
+          />
         </button>
         <div class="modal-body transition-opacity max-w-[960px] relative z-50">
           <div class="search bottom-12 inset-x-0 flex flex-col items-center space-y-4">
@@ -62,7 +64,7 @@ export default {
       if(this.isOpen === true) {
         let self = this
         this.$nextTick().then(() => {
-          console.log(self.$refs.focusMe.focus())
+          self.$refs.focusMe.focus()
         })
       }
     }

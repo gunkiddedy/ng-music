@@ -22,7 +22,10 @@
             {{ content.primaryGenreName }}
           </button>
           <div class="price flex items-center space-x-1">
-            <img :src="require('../assets/currency-dollar.svg')" alt="logo">
+            <BaseImage
+              file-name="currency-dollar.svg"
+              alt="currency-dollar"
+            />
             <span class="text-xs text-[#f5b014]">{{ content.trackPrice }}</span>
           </div>
         </div>
